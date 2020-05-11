@@ -9,7 +9,7 @@ public class Move : JobComponentSystem
 {
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
-        float deltaTime = Time.DeltaTime;
+                float deltaTime = Time.DeltaTime;
         Entities
             .ForEach((ref Translation translation, in Speed speed, in Direction dir, in TakeDamage takeDamage) =>
             {
