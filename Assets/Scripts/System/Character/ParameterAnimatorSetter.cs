@@ -7,6 +7,7 @@ using Unity.Jobs;
 public class ParameterAnimatorSetter : JobComponentSystem
 {
     private Dictionary<int,Animator> animators = new Dictionary<int, Animator>();
+    private bool swich = false;
 
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
@@ -50,6 +51,15 @@ public class ParameterAnimatorSetter : JobComponentSystem
                         takeDamage.alreadyTakeDamage = false;
                     }
                 }
+                if (animators[id.Value].GetCurrentAnimatorStateInfo(0).IsTag("Sword"))
+                {
+                    attack = new Weapon("Sword").Value;
+                }
+                if (animators[id.Value].GetCurrentAnimatorStateInfo(0).IsTag("Gun"))
+                {
+                    attack = new Weapon("Gun").Value;
+                }
+
             }).Run();
 
         return default;
