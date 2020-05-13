@@ -11,12 +11,16 @@ public class DamageTaker : JobComponentSystem
     {
         Entities
             .WithoutBurst()
-            .ForEach((ref TakeDamage takeDamage, ref Hp hp) =>
+            .ForEach((ref TakeDamage takeDamage, ref Hp hp, ref Dead dead) =>
             {
                 if (takeDamage.takeDamage && !takeDamage.alreadyTakeDamage)
                 {
                     hp.Value -= takeDamage.damage;
                     takeDamage.alreadyTakeDamage = true;
+                    if(hp.Value < 1)
+                    {
+                        dead.Value = true;
+                    }
                 }
 
             }).Run();

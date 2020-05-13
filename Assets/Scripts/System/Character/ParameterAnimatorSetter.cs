@@ -7,13 +7,12 @@ using Unity.Jobs;
 public class ParameterAnimatorSetter : JobComponentSystem
 {
     private Dictionary<int,Animator> animators = new Dictionary<int, Animator>();
-    private bool swich = false;
-
+    EntityManager entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
     protected override JobHandle OnUpdate(JobHandle inputDeps)
     {
         Entities
             .WithoutBurst()
-            .ForEach((ref Direction dir, ref Speed speed, ref TakeDamage takeDamage, ref Attack attack, in Dead dead, in Id id) =>
+            .ForEach((ref Speed speed, ref TakeDamage takeDamage, ref Attack attack, in Entity entity, in Dead dead, in Id id) =>
             {
                 if (!animators.ContainsKey(id.Value))
                 {
@@ -25,15 +24,15 @@ public class ParameterAnimatorSetter : JobComponentSystem
                         }
                     }
                 }
-                if (animators[id.Value].GetFloat("Direction") != 0)
-                {
-                    dir.Value = animators[id.Value].GetFloat("Direction");
-                }
+                
 
                 speed.Value = animators[id.Value].GetFloat("Speed");
                 attack.attack = animators[id.Value].GetFloat("Attack");
 
-                animators[id.Value].SetBool("Dead", dead.Value);
+                if (entityManager.GetName(entity) == "Guardian" && dead.Value != animators[id.Value].GetBool("Dead"))
+                {
+                    animators[id.Value].SetBool("Dead", dead.Value);
+                }
 
                 if (takeDamage.alreadyTakeDamage)
                 {
@@ -50,14 +49,6 @@ public class ParameterAnimatorSetter : JobComponentSystem
                     {
                         takeDamage.alreadyTakeDamage = false;
                     }
-                }
-                if (animators[id.Value].GetCurrentAnimatorStateInfo(0).IsTag("Sword"))
-                {
-                    attack = new Weapon("Sword").Value;
-                }
-                if (animators[id.Value].GetCurrentAnimatorStateInfo(0).IsTag("Gun"))
-                {
-                    attack = new Weapon("Gun").Value;
                 }
 
             }).Run();

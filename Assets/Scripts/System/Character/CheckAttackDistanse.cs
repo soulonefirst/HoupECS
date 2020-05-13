@@ -22,7 +22,7 @@ public class CheckAttackDistanse : JobComponentSystem
                 {
                     RaycastInput input = new RaycastInput()
                     {
-                        Start = translation.Value,
+                        Start = translation.Value + new float3(attack.attackMargin * direction.Value, 0, 0),
                         End = translation.Value + new float3(attack.attackDistance * direction.Value, 0, 0),
                         Filter = collider.Value.Value.Filter
                     };
