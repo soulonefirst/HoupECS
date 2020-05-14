@@ -6,9 +6,9 @@ using Unity.Physics.Systems;
 using Unity.Mathematics;
 using Unity.Transforms;
 [UpdateBefore(typeof(Move))]
-public class CollideDetection : JobComponentSystem
+public class CollideDetection : SystemBase
 {
-    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    protected override void OnUpdate()
     {
                float deltaTime = Time.DeltaTime;
         Entities
@@ -37,6 +37,5 @@ public class CollideDetection : JobComponentSystem
                }
 
            }).Run();
-        return default;
     }
 }

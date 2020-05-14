@@ -5,25 +5,20 @@ using Unity.Entities;
 using Unity.Jobs;
 [UpdateAfter(typeof(ParameterAnimatorSetter))]
 [AlwaysSynchronizeSystem]
-public class DamageTaker : JobComponentSystem
+public class DamageTaker : SystemBase
 {
-    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    protected override void OnUpdate()
     {
         Entities
             .WithoutBurst()
-            .ForEach((ref TakeDamage takeDamage, ref Hp hp, ref Dead dead) =>
+            .ForEach((ref TakeDamage takeDamage, ref Hp hp) =>
             {
                 if (takeDamage.takeDamage && !takeDamage.alreadyTakeDamage)
                 {
                     hp.Value -= takeDamage.damage;
                     takeDamage.alreadyTakeDamage = true;
-                    if(hp.Value < 1)
-                    {
-                        dead.Value = true;
-                    }
                 }
 
             }).Run();
-        return default;
     }
 }

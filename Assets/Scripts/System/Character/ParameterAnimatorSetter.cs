@@ -4,11 +4,11 @@ using UnityEngine;
 using Unity.Entities;
 using Unity.Jobs;
 [AlwaysSynchronizeSystem]
-public class ParameterAnimatorSetter : JobComponentSystem
+public class ParameterAnimatorSetter : SystemBase
 {
     private Dictionary<int,Animator> animators = new Dictionary<int, Animator>();
     EntityManager entityManager = World.DefaultGameObjectInjectionWorld.EntityManager;
-    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    protected override void OnUpdate()
     {
         Entities
             .WithoutBurst()
@@ -28,11 +28,8 @@ public class ParameterAnimatorSetter : JobComponentSystem
 
                 speed.Value = animators[id.Value].GetFloat("Speed");
                 attack.attack = animators[id.Value].GetFloat("Attack");
+                animators[id.Value].SetBool("Dead", dead.Value);
 
-                if (entityManager.GetName(entity) == "Guardian" && dead.Value != animators[id.Value].GetBool("Dead"))
-                {
-                    animators[id.Value].SetBool("Dead", dead.Value);
-                }
 
                 if (takeDamage.alreadyTakeDamage)
                 {
@@ -52,8 +49,6 @@ public class ParameterAnimatorSetter : JobComponentSystem
                 }
 
             }).Run();
-
-        return default;
     }
 
 }

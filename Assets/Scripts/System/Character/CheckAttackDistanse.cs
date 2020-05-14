@@ -8,9 +8,9 @@ using Unity.Physics.Systems;
 using Unity.Mathematics;
 using Unity.Transforms;
 [AlwaysSynchronizeSystem]
-public class CheckAttackDistanse : JobComponentSystem
+public class CheckAttackDistanse : SystemBase
 {
-    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    protected override void OnUpdate()
     {
        Entities
             .WithoutBurst()
@@ -43,7 +43,5 @@ public class CheckAttackDistanse : JobComponentSystem
                 }
 
             }).Run();
-        return default;
     }
-
 }

@@ -7,10 +7,10 @@ using Unity.Transforms;
 using Unity.Mathematics;
 [AlwaysSynchronizeSystem]
 [UpdateAfter(typeof(Move))]
-public class PositionRelation : JobComponentSystem
+public class PositionRelation : SystemBase
 {
         Dictionary<int , Transform> transforms = new Dictionary<int, Transform>();
-    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    protected override void OnUpdate()
     {
         Entities
             .WithoutBurst()
@@ -33,6 +33,5 @@ public class PositionRelation : JobComponentSystem
                 }
 
             }).Run();
-        return default;
     }
 }

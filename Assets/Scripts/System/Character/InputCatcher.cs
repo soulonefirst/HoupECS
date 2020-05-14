@@ -4,9 +4,9 @@ using UnityEngine;
 using Unity.Entities;
 using Unity.Jobs;
 [AlwaysSynchronizeSystem]
-public class InputCatcher : JobComponentSystem
+public class InputCatcher : SystemBase
 {
-    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    protected override void OnUpdate()
     {
         Entities
             .ForEach((ref InputData inputData) =>
@@ -17,6 +17,5 @@ public class InputCatcher : JobComponentSystem
                 inputData.mouseRight = Input.GetKey(KeyCode.Mouse1);
 
             }).Run();
-        return default;
     }
 }

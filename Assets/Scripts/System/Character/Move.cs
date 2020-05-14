@@ -5,9 +5,9 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Transforms;
 
-public class Move : JobComponentSystem
+public class Move : SystemBase
 {
-    protected override JobHandle OnUpdate(JobHandle inputDeps)
+    protected override void OnUpdate()
     {
                 float deltaTime = Time.DeltaTime;
         Entities
@@ -23,6 +23,5 @@ public class Move : JobComponentSystem
                 }
             }
             ).Run();
-        return default;
     }
 }

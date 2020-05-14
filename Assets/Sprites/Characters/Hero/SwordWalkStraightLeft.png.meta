@@ -18,7 +18,7 @@ TextureImporter:
       213: -2759664653491634252
     second: SwordWalkStraightLeft_4
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -72,6 +72,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -115,7 +116,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54f56b56865c6f74da832e6daef449c7
+      spriteID: 0c2f13404961a5e10800000000000000
       internalID: 2187085394023150272
       vertices: []
       indices: 
@@ -136,7 +137,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd2c3c5e2a080904aaa188c6d39ca325
+      spriteID: 69fb2157ac306a710800000000000000
       internalID: 1704053677088751510
       vertices: []
       indices: 
@@ -157,7 +158,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f88c58bedeaa23a46bd3087b32ef40fc
+      spriteID: 578619b29d3b7c9a0800000000000000
       internalID: -6212799415614085003
       vertices: []
       indices: 
@@ -178,7 +179,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2694c1582fa34a64988dcc6a8386d79f
+      spriteID: 3316c05322555ced0800000000000000
       internalID: -2394414021470297805
       vertices: []
       indices: 
@@ -199,7 +200,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 913ffd1b23c49084eb2f1e2c9f23e5b6
+      spriteID: 4bffd657e93b3b9d0800000000000000
       internalID: -2759664653491634252
       vertices: []
       indices: 
