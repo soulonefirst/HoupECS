@@ -3,31 +3,31 @@ guid: e68b28584a821d1409a4db6cc3f6b017
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: WalkingLeft_0
+      213: -5244818976136665699
+    second: walkingLeft_0
   - first:
-      213: 21300002
-    second: WalkingLeft_1
+      213: -7573161480030985771
+    second: walkingLeft_1
   - first:
-      213: 21300004
-    second: WalkingLeft_2
+      213: -7552648800822587186
+    second: walkingLeft_2
   - first:
-      213: 21300006
-    second: WalkingLeft_3
+      213: -7253406544637980793
+    second: walkingLeft_3
   - first:
-      213: 21300008
-    second: WalkingLeft_4
+      213: 3123248963838349988
+    second: walkingLeft_4
   - first:
-      213: 21300010
-    second: WalkingLeft_5
+      213: -2028797442906207518
+    second: walkingLeft_5
   - first:
-      213: 21300012
-    second: WalkingLeft_6
+      213: 6170759787662185464
+    second: walkingLeft_6
   - first:
-      213: 21300014
-    second: WalkingLeft_7
+      213: -4716513081520242953
+    second: walkingLeft_7
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +81,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -106,185 +107,173 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WalkingLeft_0
+      name: walkingLeft_0
       rect:
         serializedVersion: 2
-        x: 17
-        y: 4
-        width: 26
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
+      spriteID: d956520fde8a637b0800000000000000
+      internalID: -5244818976136665699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingLeft_1
+      name: walkingLeft_1
       rect:
         serializedVersion: 2
-        x: 54
-        y: 3
-        width: 25
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: 5d1e41c12c9b6e690800000000000000
+      internalID: -7573161480030985771
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingLeft_2
+      name: walkingLeft_2
       rect:
         serializedVersion: 2
-        x: 91
-        y: 3
-        width: 23
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
+      spriteID: ec090b96ee99f2790800000000000000
+      internalID: -7552648800822587186
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingLeft_3
+      name: walkingLeft_3
       rect:
         serializedVersion: 2
-        x: 134
-        y: 3
-        width: 22
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
+      spriteID: 78f0c578d29b65b90800000000000000
+      internalID: -7253406544637980793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingLeft_4
+      name: walkingLeft_4
       rect:
         serializedVersion: 2
-        x: 168
-        y: 3
-        width: 22
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
+      spriteID: 4a211ba8262085b20800000000000000
+      internalID: 3123248963838349988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingLeft_5
+      name: walkingLeft_5
       rect:
         serializedVersion: 2
-        x: 208
-        y: 2
-        width: 21
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
+      spriteID: 2eaca56897348d3e0800000000000000
+      internalID: -2028797442906207518
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingLeft_6
+      name: walkingLeft_6
       rect:
         serializedVersion: 2
-        x: 243
-        y: 2
-        width: 20
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
+      spriteID: 8f39ed13551f2a550800000000000000
+      internalID: 6170759787662185464
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkingLeft_7
+      name: walkingLeft_7
       rect:
         serializedVersion: 2
-        x: 277
-        y: 2
-        width: 21
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
+      spriteID: 7feb08d67549b8eb0800000000000000
+      internalID: -4716513081520242953
       vertices: []
       indices: 
       edges: []
@@ -292,7 +281,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

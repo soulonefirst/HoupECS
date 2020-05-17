@@ -38,7 +38,7 @@ public class CheckAttackDistanse : SystemBase
                     };
 
                     Unity.Physics.RaycastHit hit = new Unity.Physics.RaycastHit();
-                    Debug.DrawLine(translation.Value, translation.Value + new float3(attack.attackDistance * direction.Value, 0, 0));
+                    Debug.DrawLine(translation.Value + new float3(attack.attackMargin * direction.Value, 0, 0), translation.Value + new float3(attack.attackDistance * direction.Value, 0, 0));
                     if(collisionWorld.CastRay(input, out hit))
                     {
                         Entity hitEntity = builtInPhysicsWorld.PhysicsWorld.Bodies[hit.RigidBodyIndex].Entity;

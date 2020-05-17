@@ -3,17 +3,17 @@ guid: eaf0e275f01c2ac4aaadb80019d5c357
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7894308883384308476
-    second: Strike_0
+      213: -5777657545968363414
+    second: strike_0
   - first:
-      213: 8716443635218818940
-    second: Strike_1
+      213: 8676947864587116058
+    second: strike_1
   - first:
-      213: -5317898649937906389
-    second: Strike_2
+      213: 6958531133989036851
+    second: strike_2
   - first:
-      213: -4747580147343137777
-    second: Strike_3
+      213: 8663843859207707135
+    second: strike_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -95,23 +95,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Strike_0
+      name: strike_0
       rect:
         serializedVersion: 2
         x: 0
@@ -125,14 +113,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cf215558a183e8d60800000000000000
-      internalID: 7894308883384308476
+      spriteID: a6853b2c213a1dfa0800000000000000
+      internalID: -5777657545968363414
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_1
+      name: strike_1
       rect:
         serializedVersion: 2
         x: 100
@@ -146,14 +134,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c77aee5fd4707f870800000000000000
-      internalID: 8716443635218818940
+      spriteID: a1e9c434c16ba6870800000000000000
+      internalID: 8676947864587116058
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_2
+      name: strike_2
       rect:
         serializedVersion: 2
         x: 200
@@ -167,14 +155,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b25fbe27a570336b0800000000000000
-      internalID: -5317898649937906389
+      spriteID: 333a9efc23ba19060800000000000000
+      internalID: 6958531133989036851
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Strike_3
+      name: strike_3
       rect:
         serializedVersion: 2
         x: 300
@@ -188,8 +176,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f046aee72053d1eb0800000000000000
-      internalID: -4747580147343137777
+      spriteID: ff9568146182c3870800000000000000
+      internalID: 8663843859207707135
       vertices: []
       indices: 
       edges: []
