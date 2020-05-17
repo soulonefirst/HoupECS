@@ -13,7 +13,7 @@ public class Move : SystemBase
         Entities
             .ForEach((ref Translation translation, in Speed speed, in Direction dir, in TakeDamage takeDamage) =>
             {
-                if (takeDamage.takeDamage)
+                if (takeDamage.alreadyTakeDamage)
                 {
                     translation.Value.x += (speed.Value * takeDamage.attackDirection) * deltaTime;
                 }

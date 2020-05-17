@@ -3,20 +3,20 @@ guid: fb0e9c4042d69584dbf2ff724d5a8d3b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6201019692056567399
-    second: WalkRight_0
+      213: 8947405149197054554
+    second: walkRight_0
   - first:
-      213: -7852898016727190981
-    second: WalkRight_1
+      213: -2743027371928017607
+    second: walkRight_1
   - first:
-      213: 3771676678745289610
-    second: WalkRight_2
+      213: -7365069499568303980
+    second: walkRight_2
   - first:
-      213: -3566616766442689571
-    second: WalkRight_3
+      213: -5841366056098305458
+    second: walkRight_3
   - first:
-      213: 5291919383998031898
-    second: WalkRight_4
+      213: -2338150426259946248
+    second: walkRight_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -98,23 +98,11 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: WalkRight_0
+      name: walkRight_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,14 +116,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 99124c9c17d81f9a0800000000000000
-      internalID: -6201019692056567399
+      spriteID: a52346be3919b2c70800000000000000
+      internalID: 8947405149197054554
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight_1
+      name: walkRight_1
       rect:
         serializedVersion: 2
         x: 100
@@ -149,14 +137,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b323b973cd6e40390800000000000000
-      internalID: -7852898016727190981
+      spriteID: 935ae0f632fcee9d0800000000000000
+      internalID: -2743027371928017607
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight_2
+      name: walkRight_2
       rect:
         serializedVersion: 2
         x: 200
@@ -170,14 +158,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a83fc34c4ffa75430800000000000000
-      internalID: 3771676678745289610
+      spriteID: 490da2cdf440ac990800000000000000
+      internalID: -7365069499568303980
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight_3
+      name: walkRight_3
       rect:
         serializedVersion: 2
         x: 300
@@ -191,14 +179,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ddb2b3a92f4d08ec0800000000000000
-      internalID: -3566616766442689571
+      spriteID: e4a6c37558c4feea0800000000000000
+      internalID: -5841366056098305458
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: WalkRight_4
+      name: walkRight_4
       rect:
         serializedVersion: 2
         x: 400
@@ -212,8 +200,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a18e43754aca07940800000000000000
-      internalID: 5291919383998031898
+      spriteID: 8f4095b43983d8fd0800000000000000
+      internalID: -2338150426259946248
       vertices: []
       indices: 
       edges: []
