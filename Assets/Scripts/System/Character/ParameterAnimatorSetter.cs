@@ -36,7 +36,6 @@ public class ParameterAnimatorSetter : SystemBase
                     if (takeDamage.takeDamage)
                     {
                         animators[id.Value].SetBool("TakeDamage", true);
-                        takeDamage.takeDamage = false;
                     } else
                     if (animators[id.Value].GetCurrentAnimatorStateInfo(0).IsTag("TakeDamage"))
                     {
@@ -45,6 +44,7 @@ public class ParameterAnimatorSetter : SystemBase
                     if (!animators[id.Value].GetBool("TakeDamage"))
                     {
                         takeDamage.alreadyTakeDamage = false;
+                        takeDamage.takeDamage = false;
                     }
                 }
 
