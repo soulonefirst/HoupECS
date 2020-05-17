@@ -8,15 +8,22 @@ using Unity.Transforms;
 [UpdateBefore(typeof(Move))]
 public class CollideDetection : SystemBase
 {
+    private BuildPhysicsWorld builtInPhysicsWorld;
+
+
+
+    protected override void OnCreate()
+    {
+        builtInPhysicsWorld = World.GetOrCreateSystem<BuildPhysicsWorld>();
+    }
     protected override void OnUpdate()
     {
-               float deltaTime = Time.DeltaTime;
+        var collisionWorld = builtInPhysicsWorld.PhysicsWorld.CollisionWorld;
+        float deltaTime = Time.DeltaTime;
         Entities
            .WithoutBurst()
            .ForEach((ref Speed speed, in Translation translation, in Direction direction, in PhysicsCollider collider) =>
            {
-               var physicsWorldSystem = World.DefaultGameObjectInjectionWorld.GetExistingSystem<BuildPhysicsWorld>();
-               var collisionWorld = physicsWorldSystem.PhysicsWorld.CollisionWorld;
                if (speed.Value > 0)
                {
                    RaycastInput input = new RaycastInput()

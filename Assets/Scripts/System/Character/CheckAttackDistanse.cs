@@ -8,16 +8,26 @@ using Unity.Physics.Systems;
 using Unity.Mathematics;
 using Unity.Transforms;
 [AlwaysSynchronizeSystem]
+[UpdateAfter(typeof(BuildPhysicsWorld))]
 public class CheckAttackDistanse : SystemBase
 {
+    private BuildPhysicsWorld builtInPhysicsWorld;
+    private EntityManager EM;
+
+
+
+    protected override void OnCreate()
+    {
+        builtInPhysicsWorld = World.GetOrCreateSystem<BuildPhysicsWorld>();
+        EM = World.DefaultGameObjectInjectionWorld.EntityManager;
+    }
     protected override void OnUpdate()
     {
-       Entities
+        Entities
             .WithoutBurst()
             .ForEach((ref Attack attack, in Translation translation, in Direction direction, in PhysicsCollider collider) =>
             {
-                var physicsWorldSystem = World.DefaultGameObjectInjectionWorld.GetExistingSystem<BuildPhysicsWorld>();
-                var collisionWorld = physicsWorldSystem.PhysicsWorld.CollisionWorld;
+                     var collisionWorld = builtInPhysicsWorld.PhysicsWorld.CollisionWorld;
                 if (attack.attack>0)
                 {
                     RaycastInput input = new RaycastInput()
@@ -31,10 +41,10 @@ public class CheckAttackDistanse : SystemBase
                     Debug.DrawLine(translation.Value, translation.Value + new float3(attack.attackDistance * direction.Value, 0, 0));
                     if(collisionWorld.CastRay(input, out hit))
                     {
-                        Entity hitEntity = physicsWorldSystem.PhysicsWorld.Bodies[hit.RigidBodyIndex].Entity;
-                        if (!World.DefaultGameObjectInjectionWorld.EntityManager.GetComponentData<TakeDamage>(hitEntity).alreadyTakeDamage)
+                        Entity hitEntity = builtInPhysicsWorld.PhysicsWorld.Bodies[hit.RigidBodyIndex].Entity;
+                        if (EM.HasComponent<TakeDamage>(hitEntity) && !EM.GetComponentData<TakeDamage>(hitEntity).alreadyTakeDamage)
                         {
-                            World.DefaultGameObjectInjectionWorld.EntityManager.SetComponentData(hitEntity, new TakeDamage {takeDamage = true, damage =attack.attackDamage, attackDirection = direction.Value });
+                            EM.SetComponentData(hitEntity, new TakeDamage {takeDamage = true, damage =attack.attackDamage, attackDirection = direction.Value });
                         }
 
                     }
