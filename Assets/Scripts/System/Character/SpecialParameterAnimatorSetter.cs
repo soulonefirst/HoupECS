@@ -9,34 +9,45 @@ using UnityEngine.Timeline;
 
 public class SpecialParameterAnimatorSetter : SystemBase
 {
-    bool jamp = false;
-    private Object[] timelines;
+    private TimelineAsset[] timelines;
     private Dictionary<int, Animator> animators = new Dictionary<int, Animator>();
-    protected override void OnCreate()
-    {
-        timelines = Resources.LoadAll("Timelines", typeof(TimelineAsset));
-    }
     protected override void OnUpdate()
     {
+        if(timelines == null)
+            timelines = PlayableDirectorBuffer.timelines;
         Entities
             .WithoutBurst()
             .ForEach((in Wait wait, in Id id) => {
-                if (!animators.ContainsKey(id.Value))
+            if (!animators.ContainsKey(id.Value))
+            {
+                foreach (GameObject gObj in DollsBuffer.dolls)
                 {
-                    foreach (GameObject gObj in DollsBuffer.dolls)
+                    if (gObj.GetHashCode() == id.Value)
                     {
-                        if (gObj.GetHashCode() == id.Value)
-                        {
-                            animators.Add(id.Value, gObj.GetComponent<Animator>());
-                        }
+                        animators.Add(id.Value, gObj.GetComponent<Animator>());
+                    }
+                }
+            }
+
+            if (animators[id.Value].GetCurrentAnimatorStateInfo(0).IsTag("PD"))
+            {
+                    switch (animators[id.Value].GetFloat("Timeline"))
+                    {
+                        case 0:
+                            Debug.Log(1);
+                            PlayableDirectorBuffer.playableDirector.Play(timelines[0]);
+                            animators[id.Value].PlayInFixedTime("WalkRight",-1, (float)PlayableDirectorBuffer.playableDirector.duration);
+                            break;
+                        case 1:
+                            PlayableDirectorBuffer.playableDirector.Play(timelines[1]);
+                            break;
+                        case 2:
+                            PlayableDirectorBuffer.playableDirector.Play(timelines[2]);
+                            break;
                     }
                 }
                 animators[id.Value].SetBool("Wait", wait.Value);
-                if (wait.Value == true && jamp == false && animators[id.Value].name == "BossDoll")
-                {
-                    animators[id.Value].GetComponent<PlayableDirector>().Play((TimelineAsset)timelines[0]);
-                    jamp = true;
-                }
+
             }).Run();
     }
 

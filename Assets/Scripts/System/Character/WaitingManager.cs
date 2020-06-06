@@ -5,7 +5,6 @@ using Unity.Entities;
 using Unity.Jobs;
 using Unity.Collections;
 
-
 public class WaitingManager : SystemBase
 {
     private bool guardian1Dead;
