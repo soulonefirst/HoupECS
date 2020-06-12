@@ -3,34 +3,34 @@ guid: 4a3f037fb95d27f47abb6c9b9271c054
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
+      213: -4569964369888161602
     second: WoundedGettingOut_0
   - first:
-      213: 21300002
+      213: -6359195108818920776
     second: WoundedGettingOut_1
   - first:
-      213: 21300004
+      213: -1615686248427761740
     second: WoundedGettingOut_2
   - first:
-      213: 21300006
+      213: 4351834652516775370
     second: WoundedGettingOut_3
   - first:
-      213: 21300008
+      213: -2832938425612974643
     second: WoundedGettingOut_4
   - first:
-      213: 21300010
+      213: -5167070350310905585
     second: WoundedGettingOut_5
   - first:
-      213: 21300012
+      213: -1873507442611298182
     second: WoundedGettingOut_6
   - first:
-      213: 21300014
+      213: -3381527514591991549
     second: WoundedGettingOut_7
   - first:
-      213: 21300016
+      213: -6288044585155330270
     second: WoundedGettingOut_8
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -84,6 +84,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -116,19 +117,19 @@ TextureImporter:
       name: WoundedGettingOut_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 3
-        width: 37
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8a3f77f2c7f1d6c478efe08f9aa52c44
-      internalID: 21300000
+      spriteID: eb0df984e993490c0800000000000000
+      internalID: -4569964369888161602
       vertices: []
       indices: 
       edges: []
@@ -137,19 +138,19 @@ TextureImporter:
       name: WoundedGettingOut_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 3
-        width: 36
-        height: 25
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 100
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c84138a418ca594daf2aad36f983a54
-      internalID: 21300002
+      spriteID: 8ba5271bdb99fb7a0800000000000000
+      internalID: -6359195108818920776
       vertices: []
       indices: 
       edges: []
@@ -158,19 +159,19 @@ TextureImporter:
       name: WoundedGettingOut_2
       rect:
         serializedVersion: 2
-        x: 79
-        y: 3
-        width: 30
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 200
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 712ce395f63fa744fa62d6dd4c6bfe34
-      internalID: 21300004
+      spriteID: 4bfcaf5daede399e0800000000000000
+      internalID: -1615686248427761740
       vertices: []
       indices: 
       edges: []
@@ -179,19 +180,19 @@ TextureImporter:
       name: WoundedGettingOut_3
       rect:
         serializedVersion: 2
-        x: 124
-        y: 4
-        width: 26
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 300
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d182abd012ac88b4d869df798853f75f
-      internalID: 21300006
+      spriteID: ac57f783f82d46c30800000000000000
+      internalID: 4351834652516775370
       vertices: []
       indices: 
       edges: []
@@ -200,19 +201,19 @@ TextureImporter:
       name: WoundedGettingOut_4
       rect:
         serializedVersion: 2
-        x: 159
-        y: 4
-        width: 25
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 400
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57b0d75a3e6a6984c84741ae59b07693
-      internalID: 21300008
+      spriteID: dc5c8cee2816fa8d0800000000000000
+      internalID: -2832938425612974643
       vertices: []
       indices: 
       edges: []
@@ -221,19 +222,19 @@ TextureImporter:
       name: WoundedGettingOut_5
       rect:
         serializedVersion: 2
-        x: 191
-        y: 4
-        width: 24
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 500
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a07dfa8f705ff3746957c6b7ece813f8
-      internalID: 21300010
+      spriteID: f09e34884e0ea48b0800000000000000
+      internalID: -5167070350310905585
       vertices: []
       indices: 
       edges: []
@@ -242,19 +243,19 @@ TextureImporter:
       name: WoundedGettingOut_6
       rect:
         serializedVersion: 2
-        x: 222
-        y: 4
-        width: 26
-        height: 37
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 600
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e9617083edfd57f40af8c10f4b2a15c8
-      internalID: 21300012
+      spriteID: a706a1f38e6fff5e0800000000000000
+      internalID: -1873507442611298182
       vertices: []
       indices: 
       edges: []
@@ -263,19 +264,19 @@ TextureImporter:
       name: WoundedGettingOut_7
       rect:
         serializedVersion: 2
-        x: 257
-        y: 4
-        width: 25
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 700
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2daea2dff0e35d41b4b8f14f9a1c9ab
-      internalID: 21300014
+      spriteID: 309e88e34a66211d0800000000000000
+      internalID: -3381527514591991549
       vertices: []
       indices: 
       edges: []
@@ -284,19 +285,19 @@ TextureImporter:
       name: WoundedGettingOut_8
       rect:
         serializedVersion: 2
-        x: 293
-        y: 4
-        width: 24
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 800
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54c9e191f79b43a43a2a2e13a21cef77
-      internalID: 21300016
+      spriteID: 22f7ff9e3c06cb8a0800000000000000
+      internalID: -6288044585155330270
       vertices: []
       indices: 
       edges: []
@@ -304,7 +305,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 9a405eb7c0186b9448ca84099ef74320
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

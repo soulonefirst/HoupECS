@@ -3,19 +3,19 @@ guid: 69f6662eb4936d34c9386d6348302ef0
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
+      213: -5767387497529661775
     second: GettingOut_0
   - first:
-      213: 21300002
+      213: 6241574493011954919
     second: GettingOut_1
   - first:
-      213: 21300004
+      213: -948890855720550270
     second: GettingOut_2
   - first:
-      213: 21300006
+      213: 3638947811147391079
     second: GettingOut_3
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -69,6 +69,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -101,19 +102,19 @@ TextureImporter:
       name: GettingOut_0
       rect:
         serializedVersion: 2
-        x: 9
+        x: 0
         y: 0
-        width: 26
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2729cd466f86f9443b37aaa8f61dda7e
-      internalID: 21300000
+      spriteID: 1b627bfb0af16ffa0800000000000000
+      internalID: -5767387497529661775
       vertices: []
       indices: 
       edges: []
@@ -122,19 +123,19 @@ TextureImporter:
       name: GettingOut_1
       rect:
         serializedVersion: 2
-        x: 59
+        x: 100
         y: 0
-        width: 26
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 471684fc6dee3464fbcb3824acaadff7
-      internalID: 21300002
+      spriteID: 7eccd1f9ee68e9650800000000000000
+      internalID: 6241574493011954919
       vertices: []
       indices: 
       edges: []
@@ -143,19 +144,19 @@ TextureImporter:
       name: GettingOut_2
       rect:
         serializedVersion: 2
-        x: 111
+        x: 200
         y: 0
-        width: 25
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c227364a7b8cb74b93c6f60fb42a338
-      internalID: 21300004
+      spriteID: 280092e4bccd4d2f0800000000000000
+      internalID: -948890855720550270
       vertices: []
       indices: 
       edges: []
@@ -164,19 +165,19 @@ TextureImporter:
       name: GettingOut_3
       rect:
         serializedVersion: 2
-        x: 160
+        x: 300
         y: 0
-        width: 26
-        height: 44
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89e8f4579a80dcd49b11cd839cfff3d1
-      internalID: 21300006
+      spriteID: 76020a711c3208230800000000000000
+      internalID: 3638947811147391079
       vertices: []
       indices: 
       edges: []
@@ -184,7 +185,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 803e660b9e4a0674aa6e7134bc34b934
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

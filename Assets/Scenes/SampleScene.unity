@@ -734,10 +734,10 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.27, y: 0.64}
+  m_Size: {x: 1, y: 0.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!95 &763113429
@@ -767,7 +767,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 763113426}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.038, y: -0.15, z: 0}
+  m_LocalPosition: {x: 0.035, y: -0.197, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1142519962}
@@ -2135,7 +2135,7 @@ PlayableDirector:
   m_GameObject: {fileID: 1538170153}
   m_Enabled: 1
   serializedVersion: 3
-  m_PlayableAsset: {fileID: 11400000, guid: 387dc56fce1fb754399ddecc95343264, type: 2}
+  m_PlayableAsset: {fileID: 11400000, guid: fd51cb94bbbeea64ea7ff30b705455f3, type: 2}
   m_InitialState: 1
   m_WrapMode: 2
   m_DirectorUpdateMode: 1
@@ -2157,6 +2157,14 @@ PlayableDirector:
     value: {fileID: 519420030}
   - key: {fileID: -8752929547152637854, guid: a142725da533adb408d309a23644c072, type: 2}
     value: {fileID: 1022018281}
+  - key: {fileID: 3960234295493972706, guid: fd51cb94bbbeea64ea7ff30b705455f3, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -3562871010164855085, guid: fd51cb94bbbeea64ea7ff30b705455f3, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: 2062086936534004468, guid: fd51cb94bbbeea64ea7ff30b705455f3, type: 2}
+    value: {fileID: 0}
+  - key: {fileID: -2365663857764664291, guid: fd51cb94bbbeea64ea7ff30b705455f3, type: 2}
+    value: {fileID: 0}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &1538170156

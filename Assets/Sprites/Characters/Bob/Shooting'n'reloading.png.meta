@@ -3,49 +3,49 @@ guid: 118dab9216db919418faef48385d599b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: Shooting'n'reloading_0
+      213: 3352239996685412119
+    second: Shooting'n'Reloading_0
   - first:
-      213: 21300002
-    second: Shooting'n'reloading_1
+      213: -3083395684485692633
+    second: Shooting'n'Reloading_1
   - first:
-      213: 21300004
-    second: Shooting'n'reloading_2
+      213: 6572321972019758048
+    second: Shooting'n'Reloading_2
   - first:
-      213: 21300006
-    second: Shooting'n'reloading_3
+      213: -1525372206782437739
+    second: Shooting'n'Reloading_3
   - first:
-      213: 21300008
-    second: Shooting'n'reloading_4
+      213: 1075102389841908195
+    second: Shooting'n'Reloading_4
   - first:
-      213: 21300010
-    second: Shooting'n'reloading_5
+      213: -8264956917807704688
+    second: Shooting'n'Reloading_5
   - first:
-      213: 21300012
-    second: Shooting'n'reloading_6
+      213: -2858790096350989176
+    second: Shooting'n'Reloading_6
   - first:
-      213: 21300014
-    second: Shooting'n'reloading_7
+      213: -626732126520305526
+    second: Shooting'n'Reloading_7
   - first:
-      213: 21300016
-    second: Shooting'n'reloading_8
+      213: -1245778833246902783
+    second: Shooting'n'Reloading_8
   - first:
-      213: 21300018
-    second: Shooting'n'reloading_9
+      213: -6139030046943402784
+    second: Shooting'n'Reloading_9
   - first:
-      213: 21300020
-    second: Shooting'n'reloading_10
+      213: -3124054081141521708
+    second: Shooting'n'Reloading_10
   - first:
-      213: 21300022
-    second: Shooting'n'reloading_11
+      213: 7181178832452775431
+    second: Shooting'n'Reloading_11
   - first:
-      213: 21300024
-    second: Shooting'n'reloading_12
+      213: -1640069447481708787
+    second: Shooting'n'Reloading_12
   - first:
-      213: 21300026
-    second: Shooting'n'reloading_13
+      213: -7575222312379310609
+    second: Shooting'n'Reloading_13
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -99,6 +99,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -124,311 +125,299 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Shooting'n'reloading_0
+      name: Shooting'n'Reloading_0
       rect:
         serializedVersion: 2
-        x: 20
-        y: 14
-        width: 26
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02305410000000000800000000000000
-      internalID: 21300000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shooting'n'reloading_1
-      rect:
-        serializedVersion: 2
-        x: 57
-        y: 14
-        width: 32
-        height: 44
+        x: 0
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.6, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 22305410000000000800000000000000
-      internalID: 21300002
+      spriteID: 7176a4c148c858e20800000000000000
+      internalID: 3352239996685412119
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_2
+      name: Shooting'n'Reloading_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 14
-        width: 36
-        height: 44
+        x: 100
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42305410000000000800000000000000
-      internalID: 21300004
+      spriteID: 723024426f39535d0800000000000000
+      internalID: -3083395684485692633
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_3
+      name: Shooting'n'Reloading_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 14
-        width: 36
-        height: 44
+        x: 200
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.35, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 62305410000000000800000000000000
-      internalID: 21300006
+      spriteID: 0e38bbb0304953b50800000000000000
+      internalID: 6572321972019758048
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_4
+      name: Shooting'n'Reloading_3
       rect:
         serializedVersion: 2
-        x: 173
-        y: 14
-        width: 36
-        height: 44
+        x: 300
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
+      spriteID: 596aa784f0ac4dae0800000000000000
+      internalID: -1525372206782437739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_5
+      name: Shooting'n'Reloading_4
       rect:
         serializedVersion: 2
-        x: 222
-        y: 12
-        width: 25
-        height: 44
+        x: 400
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2305410000000000800000000000000
-      internalID: 21300010
+      spriteID: 3e153bb6de78bee00800000000000000
+      internalID: 1075102389841908195
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_6
+      name: Shooting'n'Reloading_5
       rect:
         serializedVersion: 2
-        x: 261
-        y: 14
-        width: 23
-        height: 44
+        x: 500
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2305410000000000800000000000000
-      internalID: 21300012
+      spriteID: 0951a2e0979fc4d80800000000000000
+      internalID: -8264956917807704688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_7
+      name: Shooting'n'Reloading_6
       rect:
         serializedVersion: 2
-        x: 298
-        y: 14
-        width: 23
-        height: 44
+        x: 600
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2305410000000000800000000000000
-      internalID: 21300014
+      spriteID: 884389bcd898358d0800000000000000
+      internalID: -2858790096350989176
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_8
+      name: Shooting'n'Reloading_7
       rect:
         serializedVersion: 2
-        x: 338
-        y: 14
-        width: 23
-        height: 44
+        x: 700
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 03305410000000000800000000000000
-      internalID: 21300016
+      spriteID: a889e6593766d47f0800000000000000
+      internalID: -626732126520305526
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_9
+      name: Shooting'n'Reloading_8
       rect:
         serializedVersion: 2
-        x: 377
-        y: 14
-        width: 23
-        height: 44
+        x: 800
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.4, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23305410000000000800000000000000
-      internalID: 21300018
+      spriteID: 1062e9760ca16bee0800000000000000
+      internalID: -1245778833246902783
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_10
+      name: Shooting'n'Reloading_9
       rect:
         serializedVersion: 2
-        x: 419
-        y: 14
-        width: 23
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 43305410000000000800000000000000
-      internalID: 21300020
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shooting'n'reloading_11
-      rect:
-        serializedVersion: 2
-        x: 457
-        y: 14
-        width: 25
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63305410000000000800000000000000
-      internalID: 21300022
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Shooting'n'reloading_12
-      rect:
-        serializedVersion: 2
-        x: 491
-        y: 14
-        width: 32
-        height: 44
+        x: 900
+        y: 0
+        width: 100
+        height: 80
       alignment: 9
-      pivot: {x: 0.6, y: 0.5}
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 83305410000000000800000000000000
-      internalID: 21300024
+      spriteID: 0e42d72c2b8cdcaa0800000000000000
+      internalID: -6139030046943402784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Shooting'n'reloading_13
+      name: Shooting'n'Reloading_10
       rect:
         serializedVersion: 2
-        x: 541
-        y: 14
-        width: 26
-        height: 44
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1000
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a3305410000000000800000000000000
-      internalID: 21300026
+      spriteID: 4d2437a7d5125a4d0800000000000000
+      internalID: -3124054081141521708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shooting'n'Reloading_11
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ee6e0c91ca8a360800000000000000
+      internalID: 7181178832452775431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shooting'n'Reloading_12
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0fa1e7e68d4d39e0800000000000000
+      internalID: -1640069447481708787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shooting'n'Reloading_13
+      rect:
+        serializedVersion: 2
+        x: 1300
+        y: 0
+        width: 100
+        height: 80
+      alignment: 9
+      pivot: {x: 0.49, y: 0.28}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed940031776fd690800000000000000
+      internalID: -7575222312379310609
       vertices: []
       indices: 
       edges: []
@@ -436,7 +425,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
