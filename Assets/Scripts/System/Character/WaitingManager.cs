@@ -10,11 +10,12 @@ public class WaitingManager : SystemBase
     private bool guardian1Dead;
     private bool guardian2Dead;
     bool guardiansDead = false;
-    bool wait = false;
+    public static bool wait;
     private EntityManager eM;
     protected override void OnCreate()
     {
         eM = World.DefaultGameObjectInjectionWorld.EntityManager;
+        wait = false;
     }
     protected override void OnUpdate()
     {
@@ -28,25 +29,22 @@ public class WaitingManager : SystemBase
                     guardian1Dead = dead.Value;
                 if (eM.GetName(entity) == "Guardian2")
                     guardian2Dead = dead.Value;
+                    if (guardian1Dead && guardian2Dead )
+                    {
+                     wait = true;
+                    guardiansDead = true;
+                    }
             }).Run();
         }
-        if (wait == false)
-        {
 
             Entities
                 .WithoutBurst()
                 .ForEach((ref Wait entitiesWait) =>
                 {
-                    if (guardian1Dead && guardian2Dead)
-                    {
-                        wait = true;
-                        guardiansDead = true;
-                    }
 
                     entitiesWait.Value = wait;
 
 
                 }).Run();
-        }
     }
 }

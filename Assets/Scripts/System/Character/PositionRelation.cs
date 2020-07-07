@@ -1,10 +1,10 @@
-﻿using System.Collections;
+﻿
 using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Transforms;
-using Unity.Mathematics;
+
 [AlwaysSynchronizeSystem]
 [UpdateAfter(typeof(Move))]
 public class PositionRelation : SystemBase
@@ -14,7 +14,7 @@ public class PositionRelation : SystemBase
     {
         Entities
             .WithoutBurst()
-            .ForEach((ref Translation translation, in Id id) =>
+            .ForEach((Entity entity, ref Translation translation, in Id id) =>
             {
                 if(!transforms.ContainsKey(id.Value))
                 {
@@ -29,7 +29,13 @@ public class PositionRelation : SystemBase
 
                 }else
                 {
-                    transforms[id.Value].position = translation.Value;
+                    
+                    if (HasComponent<PlayableDirectorData>(entity) && GetComponent<PlayableDirectorData>(entity).Value)
+                    {                           
+                        SetComponent(entity, new Translation { Value = transforms[id.Value].position });
+                    } else
+                        transforms[id.Value].position = translation.Value;
+
                 }
 
             }).Run();

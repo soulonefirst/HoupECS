@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿
 using Unity.Entities;
 using Unity.Jobs;
 using Unity.Transforms;
@@ -22,6 +20,6 @@ public class Move : SystemBase
                     translation.Value.x += (speed.Value * dir.Value) *deltaTime;
                 }
             }
-            ).Run();
+            ).Schedule();
     }
 }
