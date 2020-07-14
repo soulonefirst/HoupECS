@@ -9,5 +9,4 @@ public struct Attack : IComponentData
     public int attackDamage;
     public float attackDistance;
     public float attackMargin;
-
 }

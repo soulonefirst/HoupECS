@@ -19,16 +19,15 @@ public class CheckAttackDistanse : SystemBase
     protected override void OnCreate()
     {
         builtInPhysicsWorld = World.GetOrCreateSystem<BuildPhysicsWorld>();
-        EM = World.DefaultGameObjectInjectionWorld.EntityManager;
     }
     protected override void OnUpdate()
     {
         Entities
             .WithoutBurst()
-            .ForEach((ref Attack attack, in Translation translation, in Direction direction, in PhysicsCollider collider) =>
+            .ForEach(( Entity entity, ref Attack attack, ref AlreadyAttackData alreadyAttack, in Translation translation, in Direction direction, in PhysicsCollider collider) =>
             {
                      var collisionWorld = builtInPhysicsWorld.PhysicsWorld.CollisionWorld;
-                if (attack.attack>0)
+                if ((attack.attack>0 || EntityManager.GetName(entity) == "Boss") && !alreadyAttack.Value)
                 {
                     RaycastInput input = new RaycastInput()
                     {
@@ -42,16 +41,23 @@ public class CheckAttackDistanse : SystemBase
                     if(collisionWorld.CastRay(input, out hit))
                     {
                         Entity hitEntity = builtInPhysicsWorld.PhysicsWorld.Bodies[hit.RigidBodyIndex].Entity;
-                        if (EM.HasComponent<TakeDamage>(hitEntity) && !EM.GetComponentData<TakeDamage>(hitEntity).alreadyTakeDamage)
+                        if (EntityManager.HasComponent<TakeDamage>(hitEntity) && !EntityManager.GetComponentData<TakeDamage>(hitEntity).alreadyTakeDamage && attack.attack > 0)
                         {
-                            EM.SetComponentData(hitEntity, new TakeDamage {takeDamage = true, damage =attack.attackDamage, attackDirection = direction.Value });
+                            EntityManager.SetComponentData(hitEntity, new TakeDamage {takeDamage = true, damage =attack.attackDamage, attackDirection = direction.Value });
+                            alreadyAttack.Value = true;
+                        }
+                        if(EntityManager.HasComponent<TakeDamage>(hitEntity) && attack.attack == 0)
+                        {
+                            Debug.Log(hitEntity.Index);
+                            EntityManager.SetComponentData(entity, new StrikeData { Value = true });
                         }
 
+                    }else if(attack.attack == 0)
+                        {
+                            EntityManager.SetComponentData(entity, new StrikeData { Value = false });
                     }
-
-
                 }
 
             }).Run();
-    }
+}
 }

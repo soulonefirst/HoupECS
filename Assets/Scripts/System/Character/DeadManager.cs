@@ -13,13 +13,13 @@ public class DeadManager : SystemBase
     protected override void OnCreate()
     {
         base.OnCreate();
-        // Find the ECB system once and store it for later usage
         m_EndSimulationEcbSystem = World
             .GetOrCreateSystem<EndSimulationEntityCommandBufferSystem>();
     }
     protected override void OnUpdate()
     {
         var ecb = m_EndSimulationEcbSystem.CreateCommandBuffer();
+        var GM = GetSingletonEntity<GuardianDeadData>();
         Entities
             .WithoutBurst()
            .ForEach((ref Entity entity, ref PhysicsCollider collider, ref Dead dead, in Hp hp) =>
@@ -28,6 +28,9 @@ public class DeadManager : SystemBase
                {
                   dead.Value = true;
                   ecb.RemoveComponent<PhysicsCollider>(entity);
+
+                   if (HasComponent<GuardianTag>(entity))
+                       SetSingleton(new GuardianDeadData { Value = GetSingleton<GuardianDeadData>().Value + 1 });
                }
 
            }).Run();

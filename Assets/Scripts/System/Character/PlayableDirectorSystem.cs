@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using Unity.Entities;
 using UnityEngine.Timeline;
-using Unity.Collections;
 
 public class PlayableDirectorSystem : SystemBase
 {
@@ -17,7 +16,7 @@ public class PlayableDirectorSystem : SystemBase
             timelines = PlayableDirectorBuffer.timelines;
         Entities
             .WithoutBurst()
-            .ForEach((ref PlayableDirectorData playable, in Id id) =>
+            .ForEach((ref PlayableDirectorData playable, in StrikeData strike, in Id id) =>
             {
                 if (!animators.ContainsKey(id.Value))
                 {
@@ -29,7 +28,7 @@ public class PlayableDirectorSystem : SystemBase
                         }
                     }
                 }
-
+                animators[id.Value].SetBool("Strike", strike.Value);
                 if (!playable.Value && animators[id.Value].GetCurrentAnimatorStateInfo(0).IsTag("PD"))
                 {
                     switch (animators[id.Value].GetFloat("Timeline"))

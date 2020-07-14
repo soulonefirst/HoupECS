@@ -12,7 +12,7 @@ public class ParameterAnimatorSetter : SystemBase
     {
         Entities
             .WithoutBurst()
-            .ForEach((ref Speed speed, ref TakeDamage takeDamage, ref Attack attack, in Entity entity, in Dead dead, in Id id) =>
+            .ForEach((ref Speed speed, ref TakeDamage takeDamage, ref Attack attack, ref AlreadyAttackData alreadyAttack, in Dead dead, in Id id) =>
             {
                 if (!animators.ContainsKey(id.Value))
                 {
@@ -28,6 +28,8 @@ public class ParameterAnimatorSetter : SystemBase
 
                 speed.Value = animators[id.Value].GetFloat("Speed");
                 attack.attack = animators[id.Value].GetFloat("Attack");
+                if (attack.attack == 0)
+                    alreadyAttack.Value = false;
                 animators[id.Value].SetBool("Dead", dead.Value);
 
 
